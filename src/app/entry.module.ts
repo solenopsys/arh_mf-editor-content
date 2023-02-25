@@ -15,7 +15,7 @@ import {environment} from "../environments/environment";
     providers: [
       ...PROVIDERS_CONF,
       {provide: 'single_start', useValue: false},
-      {provide: 'assets_dir', useValue: '/fm/modules/alexstorm/content'}
+      {provide: 'assets_dir', useValue: '/fm/modules/richteri/content'}
     ],
   }
 )
