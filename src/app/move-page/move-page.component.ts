@@ -4,7 +4,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 
 @Component({
-  selector: 'fui-move-page',
+  selector: 'ui-move-page',
   templateUrl: './move-page.component.html',
   styleUrls: ['./move-page.component.css'],
   encapsulation: ViewEncapsulation.Emulated,
