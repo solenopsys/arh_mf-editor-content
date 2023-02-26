@@ -19,7 +19,7 @@ import {
   SetFocusNode, SetNotEdited,
   UpdateValueNode
 } from "./content-node.store";
-import {IdService} from "@solenopsys/lib-globals";
+import {IdService} from "@solenopsys/fl-globals";
 import { ContentService } from "./content.service";
 import { FragmentVersionUpdated, UpdateFragment } from "./fragment.store";
 import { ContentState, LoadVersion } from "./content.store";

@@ -5,11 +5,11 @@ import {BootstrapComponent, GridState,} from '@solenopsys/ui-templates';
 import {APP_BASE_HREF} from '@angular/common';
 import {DECLARATION, IMPORTS_CONF, PROVIDERS_CONF, ROUTES_DEV} from "./conf";
 import {ContentGroupState, ContentNodeState, ContentState, FragmentState,} from "@solenopsys/ui-editor-content";
-import {ClusterState} from "@solenopsys/lib-clusters";
-import {createNgxs} from "@solenopsys/lib-storage";
+import {ClusterState} from "@solenopsys/fl-clusters";
+import {createNgxs} from "@solenopsys/fl-storage";
 import {RowsState} from "@solenopsys/ui-lists";
 import {environment} from "../environments/environment";
-import {HStreamService, HStreamsState, StreamsPool, WsPool} from "@solenopsys/lib-hyperstreams";
+import {HStreamService, HStreamsState, StreamsPool, WsPool} from "@solenopsys/fl-hyperstreams";
 import { FuiEditorModule } from "@solenopsys/ui-editor-content";
 
 @NgModule({

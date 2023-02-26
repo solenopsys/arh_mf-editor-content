@@ -1,6 +1,6 @@
 import {Component, Injectable, OnInit} from '@angular/core';
 import {ActivatedRoute, ActivatedRouteSnapshot, Resolve, RouterStateSnapshot} from '@angular/router';
-import {DgraphService} from "@solenopsys/lib-dgraph";
+import {DgraphService} from "@solenopsys/fl-dgraph";
 import {firstValueFrom, map, Observable} from "rxjs";
 import {ContentNode} from "../store/model";
 

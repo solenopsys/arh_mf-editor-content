@@ -2,9 +2,9 @@ import {Component, EventEmitter, Input, OnInit, ViewEncapsulation} from '@angula
 import {filter, firstValueFrom, Observable} from "rxjs";
 import {FilterCachedProvider, ItemAbstract} from "@solenopsys/ui-controls";
 
-import {ArticleVersion} from "@solenopsys/lib-dgraph";
+import {ArticleVersion} from "@solenopsys/fl-dgraph";
 import {ContentService} from "../store/content.service";
-import {IdService} from "@solenopsys/lib-globals";
+import {IdService} from "@solenopsys/fl-globals";
 import {
   ContentGroupState,
   CreateGroup,

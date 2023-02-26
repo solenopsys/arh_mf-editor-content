@@ -15,7 +15,7 @@ import {FuiComponentsModule} from "@solenopsys/ui-controls";
 import {FuiGridModule} from "@solenopsys/ui-lists";
 import {HttpClientModule} from "@angular/common/http";
 import {MovePageComponent} from "./move-page/move-page.component";
-import {HStreamService, HStreamsState, StreamsPool, WsPool} from "@solenopsys/lib-hyperstreams";
+import {HStreamService, HStreamsState, StreamsPool, WsPool} from "@solenopsys/fl-hyperstreams";
 
 export const ROUTES: Routes = [
   {path: 'move', component: MovePageComponent},

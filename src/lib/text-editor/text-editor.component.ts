@@ -16,7 +16,7 @@ import {
   LoadNodesFromVersion,
   SaveNodesToVersionOfFragment
 } from "../store/content-groups.store";
-import {IdService} from "@solenopsys/lib-globals";
+import {IdService} from "@solenopsys/fl-globals";
 
 @Component({
   selector: 'ui-text-editor',
