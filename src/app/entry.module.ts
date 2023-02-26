@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {RouterModule} from "@angular/router";
 import {DECLARATION, IMPORTS_CONF, PROVIDERS_CONF, routesAndRedirect} from "./conf";
-import {ContentGroupState, ContentNodeState, ContentState, FragmentState} from "@solenopsys/uimatrix-editor-content";
+import {ContentGroupState, ContentNodeState, ContentState, FragmentState} from "@solenopsys/ui-editor-content";
 import {createNgxs} from "@solenopsys/lib-storage";
 import {environment} from "../environments/environment";
 

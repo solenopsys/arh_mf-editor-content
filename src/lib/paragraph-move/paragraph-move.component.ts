@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Input, OnInit, ViewEncapsulation} from '@angular/core';
 import {filter, firstValueFrom, Observable} from "rxjs";
-import {FilterCachedProvider, ItemAbstract} from "@solenopsys/uimatrix-controls";
+import {FilterCachedProvider, ItemAbstract} from "@solenopsys/ui-controls";
 
 import {ArticleVersion} from "@solenopsys/lib-dgraph";
 import {ContentService} from "../store/content.service";

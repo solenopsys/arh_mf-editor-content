@@ -2,7 +2,7 @@ import {Component, Input, OnInit, ViewEncapsulation} from '@angular/core';
 
 import {Observable} from "rxjs";
 import {Store} from "@ngxs/store";
-import { DragState } from "@solenopsys/uimatrix-editor-content";
+import { DragState } from "@solenopsys/ui-editor-content";
 
 @Component({
   selector: 'ui-drag-target',

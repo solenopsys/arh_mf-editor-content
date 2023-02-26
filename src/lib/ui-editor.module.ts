@@ -9,11 +9,11 @@ import { RouterModule } from '@angular/router';
 import { TextTypeSelectorComponent } from './text-type-selector/text-type-selector.component';
 import { DragHangComponent } from './graph-text/drag-hand.component';
 import { ParagraphMoveComponent } from './paragraph-move/paragraph-move.component';
-import { UIControlsModule } from '@solenopsys/uimatrix-controls';
+import { UIControlsModule } from '@solenopsys/ui-controls';
 import { NodeEditorComponent } from './node-editor/node-editor.component';
 import { DragTargetComponent } from './drag-target/drag-target.component';
-import {DeclaredService} from "@solenopsys/uimatrix-utils";
-import {UIIconsModule} from "@solenopsys/uimatrix-icons";
+import {DeclaredService} from "@solenopsys/ui-utils";
+import {UIIconsModule} from "@solenopsys/ui-icons";
 
 const components = [
   SimpleTextComponent,
@@ -45,6 +45,6 @@ const components = [
 })
 export class UIEditorModule {
   constructor(private ds: DeclaredService) {
-    ds.addComps("@solenopsys/uimatrix-editor-content", components)
+    ds.addComps("@solenopsys/ui-editor-content", components)
   }
 }

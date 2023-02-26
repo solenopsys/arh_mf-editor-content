@@ -4,15 +4,15 @@ import {
   FormPanelComponent,
   FuiTemplatesModule,
   TablePageComponent
-} from "@solenopsys/uimatrix-templates";
+} from "@solenopsys/ui-templates";
 import {FragmentEditorPanelComponent} from "./fragment-editor/fragment-editor-panel.component";
-import {ContentService, FuiEditorModule} from "@solenopsys/uimatrix-editor-content";
+import {ContentService, FuiEditorModule} from "@solenopsys/ui-editor-content";
 import {TABLES} from "./tables.config";
 import {BrowserModule} from "@angular/platform-browser";
 import {CommonModule} from "@angular/common";
 import {FormsModule} from "@angular/forms";
-import {FuiComponentsModule} from "@solenopsys/uimatrix-controls";
-import {FuiGridModule} from "@solenopsys/uimatrix-lists";
+import {FuiComponentsModule} from "@solenopsys/ui-controls";
+import {FuiGridModule} from "@solenopsys/ui-lists";
 import {HttpClientModule} from "@angular/common/http";
 import {MovePageComponent} from "./move-page/move-page.component";
 import {HStreamService, HStreamsState, StreamsPool, WsPool} from "@solenopsys/lib-hyperstreams";
