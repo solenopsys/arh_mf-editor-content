@@ -1,21 +1,16 @@
 import {Routes} from "@angular/router";
-import {
-  BootstrapComponent,
-  FormPanelComponent,
-  FuiTemplatesModule,
-  TablePageComponent
-} from "@solenopsys/ui-templates";
+import {FormPanelComponent, TablePageComponent, UITemplatesModule} from "@solenopsys/ui-templates";
 import {FragmentEditorPanelComponent} from "./fragment-editor/fragment-editor-panel.component";
-import {ContentService, FuiEditorModule} from "@solenopsys/ui-editor-content";
+
 import {TABLES} from "./tables.config";
 import {BrowserModule} from "@angular/platform-browser";
 import {CommonModule} from "@angular/common";
 import {FormsModule} from "@angular/forms";
-import {FuiComponentsModule} from "@solenopsys/ui-controls";
-import {FuiGridModule} from "@solenopsys/ui-lists";
 import {HttpClientModule} from "@angular/common/http";
 import {MovePageComponent} from "./move-page/move-page.component";
-import {HStreamService, HStreamsState, StreamsPool, WsPool} from "@solenopsys/fl-hyperstreams";
+import {ContentService} from "../lib/store/content.service";
+import {UIListsModule} from "@solenopsys/ui-lists";
+import {UIEditorModule} from "../lib/ui-editor.module";
 
 export const ROUTES: Routes = [
   {path: 'move', component: MovePageComponent},
@@ -52,16 +47,16 @@ export const PROVIDERS_CONF = [
 
 export const DECLARATION = [
   FragmentEditorPanelComponent,
-  MovePageComponent
+  MovePageComponent,
 ]
 
+let UIComponentsModule;
 export const IMPORTS_CONF = [
-  FuiTemplatesModule,
+  UITemplatesModule,
   BrowserModule,
   CommonModule,
   FormsModule,
-  FuiComponentsModule,
-  FuiGridModule,
-  FuiEditorModule,
+  UIListsModule,
+  UIEditorModule,
   HttpClientModule,
 ];

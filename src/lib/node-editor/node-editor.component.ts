@@ -2,7 +2,8 @@ import {ChangeDetectionStrategy, Component, Input, ViewEncapsulation} from '@ang
 import {Store} from "@ngxs/store";
 import {Observable} from "rxjs";
 import {ContentNodeState, TypeChangeNode} from "../store/content-node.store";
-import { BlockNode, TextNodeType } from "@solenopsys/ui-editor-content";
+import {BlockNode, TextNodeType} from "../store/model";
+
 
 @Component({
   selector: 'ui-node-editor',
