@@ -9,7 +9,7 @@
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/packages/content-invicta",
+        "outputPath": "dist/modules/content-invicta",
         "index": "packages/modules/content-invicta/src/index.html",
         "main": "packages/modules/content-invicta/src/main.ts",
         "polyfills": "packages/modules/content-invicta/src/polyfills.ts",
