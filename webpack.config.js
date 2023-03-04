@@ -48,7 +48,7 @@ module.exports = {
       name: 'content',
       filename: 'remoteEntry.js',
       exposes: {
-        './Module': 'packages/modules/content/src/app/entry.module.ts',
+        './Module': 'packages/modules/mf-content/src/app/entry.module.ts',
       },
       shared: share({
         '@angular/core': {
@@ -115,8 +115,8 @@ module.exports = {
     }),
     iconPlug(
       'packages/fui/icons/src',
-      'dist/modules/richteri/content',
-      'packages/modules/content/src/assets/menu.json'
+      'dist/modules/mf-richteri/content',
+      'packages/modules/mf-content/src/assets/menu.json'
     ),
     sharedMappings.getPlugin(),
   ],
