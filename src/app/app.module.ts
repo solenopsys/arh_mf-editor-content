@@ -39,7 +39,6 @@ import {ParagraphMoveComponent} from "../lib/paragraph-move/paragraph-move.compo
   ],
   providers: [...PROVIDERS_CONF, WsPool,HStreamService,StreamsPool,
     {provide: 'assets_dir', useValue: ''},
-    {provide: 'single_start', useValue: true},
     {provide: APP_BASE_HREF, useValue: '/'}
   ],
   bootstrap: [BootstrapComponent],
