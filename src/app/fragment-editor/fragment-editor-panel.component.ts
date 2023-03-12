@@ -6,7 +6,7 @@ import {ArticleVersion} from "@solenopsys/fl-dgraph";
 @Component({
   selector: 'app-fragment-editor',
   templateUrl: './fragment-editor-panel.component.html',
-  styleUrls: ['./fragment-editor-panel.component.css']
+  styleUrls: ['./fragment-editor-panel.component.scss']
 })
 export class FragmentEditorPanelComponent implements OnInit {
 

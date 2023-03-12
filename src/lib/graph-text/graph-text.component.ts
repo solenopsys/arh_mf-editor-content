@@ -15,7 +15,7 @@ import {Select, Store} from "@ngxs/store";
 @Component({
   selector: 'ui-graph-text',
   templateUrl: './graph-text.component.html',
-  styleUrls: ['./graph-text.component.css']
+  styleUrls: ['./graph-text.component.scss']
 })
 export class GraphTextComponent implements OnInit, OnDestroy {
   NODES_TYPES = TextNodeType;

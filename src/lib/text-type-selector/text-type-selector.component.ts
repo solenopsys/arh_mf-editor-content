@@ -4,7 +4,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 @Component({
   selector: 'ui-text-type-selector',
   templateUrl: './text-type-selector.component.html',
-  styleUrls: ['./text-type-selector.component.css']
+  styleUrls: ['./text-type-selector.component.scss']
 })
 export class TextTypeSelectorComponent implements OnInit {
 

@@ -4,7 +4,7 @@ import {ContentNode, TextNodeType} from "../store/model";
 @Component({
   selector: 'ui-text-view',
   templateUrl: './text-view.component.html',
-  styleUrls: ['./text-view.component.css']
+  styleUrls: ['./text-view.component.scss']
 })
 export class TextViewComponent implements OnInit {
   @Input()

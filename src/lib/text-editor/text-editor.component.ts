@@ -21,7 +21,7 @@ import {IdService} from "@solenopsys/fl-globals";
 @Component({
   selector: 'ui-text-editor',
   templateUrl: './text-editor.component.html',
-  styleUrls: ['./text-editor.component.css']
+  styleUrls: ['./text-editor.component.scss']
 })
 export class TextEditorComponent implements OnInit, OnDestroy {
   fragmentId!: string;

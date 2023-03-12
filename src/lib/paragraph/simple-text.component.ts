@@ -17,7 +17,7 @@ import {ContentNodeState, SetFocusNode, UpdateValueNode} from "../store/content-
   selector: 'ui-simple-text',
   templateUrl: './simple-text.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  styleUrls: ['./simple-text.component.css']
+  styleUrls: ['./simple-text.component.scss']
 })
 export class SimpleTextComponent implements AfterViewInit, OnInit {
 

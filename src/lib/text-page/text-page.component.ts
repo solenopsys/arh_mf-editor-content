@@ -7,7 +7,7 @@ import {ContentNode} from "../store/model";
 @Component({
   selector: 'ui-text-page',
   templateUrl: './text-page.component.html',
-  styleUrls: ['./text-page.component.css']
+  styleUrls: ['./text-page.component.scss']
 })
 export class TextPageComponent implements OnInit {
 
