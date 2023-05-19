@@ -2,7 +2,7 @@ import {ChangeDetectionStrategy, Component, Input, ViewEncapsulation} from '@ang
 import {Store} from "@ngxs/store";
 import {Observable} from "rxjs";
 import {ContentNodeState, TypeChangeNode} from "../store/content-node.store";
-import {BlockNode, TextNodeType} from "../store/model";
+import {BlockNode, ContentNodeType} from "../store/model";
 
 
 @Component({
@@ -13,7 +13,7 @@ import {BlockNode, TextNodeType} from "../store/model";
   encapsulation: ViewEncapsulation.Emulated,
 })
 export class NodeEditorComponent {
-  NODES_TYPES = TextNodeType;
+  NODES_TYPES = ContentNodeType;
 
   blockId!: string;
 
@@ -34,7 +34,7 @@ export class NodeEditorComponent {
     this.block$ = this.store.select(ContentNodeState.getBlockById(blockId));
   }
 
-  typeChange(type: TextNodeType) {
+  typeChange(type: ContentNodeType) {
     this.store.dispatch(new TypeChangeNode(this.blockId, type))
   }
 }

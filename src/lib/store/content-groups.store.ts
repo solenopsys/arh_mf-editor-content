@@ -6,7 +6,7 @@ import {
   FIRST_POSITION,
   LAST_POSITION,
 
-  TextNodeType,
+  ContentNodeType, ArticleVersion,
 } from "./model";
 import {Action, createSelector, Selector, State, StateContext, Store} from "@ngxs/store";
 import {append, compose, insertItem, patch, removeItem, updateItem} from "@ngxs/store/operators";
@@ -23,6 +23,7 @@ import {IdService} from "@solenopsys/fl-globals";
 import { ContentService } from "./content.service";
 import { FragmentVersionUpdated, UpdateFragment } from "./fragment.store";
 import { ContentState, LoadVersion } from "./content.store";
+
 
 
 interface ContentGroupModel {
@@ -99,7 +100,7 @@ export class OverDragNode {
 export class NewGroupNode {
   static readonly type = '[ContentGroup] Create New';
 
-  constructor(public groupID: string, public toPosition: number, public text: string, public type: TextNodeType) {
+  constructor(public groupID: string, public toPosition: number, public text: string, public type: ContentNodeType) {
   }
 }
 
@@ -248,7 +249,8 @@ export class ContentGroupState {
         }
 
       }
-      cs.newTextVersion({articleId: group.fragmentId, blocks}).then(frag => {
+      let articleVersion:ArticleVersion = {articleId: group.fragmentId, blocks: blocks};
+      cs.newTextVersion(articleVersion).then(frag => {
         console.log("SAVED VERSION", frag)
 
         setState(patch(
@@ -387,7 +389,7 @@ export class ContentGroupState {
       );
 
       this.store.dispatch(new UpdateValueNode(id, first))
-      this.store.dispatch(new NewNode(newId, second, TextNodeType.PARAGRAPH))
+      this.store.dispatch(new NewNode(newId, second, ContentNodeType.PARAGRAPH))
     }
   }
 

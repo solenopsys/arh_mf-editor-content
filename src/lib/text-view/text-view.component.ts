@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {ContentNode, TextNodeType} from "../store/model";
+import {ContentNode, ContentNodeType} from "../store/model";
 
 @Component({
   selector: 'ui-text-view',
@@ -9,7 +9,7 @@ import {ContentNode, TextNodeType} from "../store/model";
 export class TextViewComponent implements OnInit {
   @Input()
   blocks: ContentNode[] | undefined;
-  TN = TextNodeType;
+  TN = ContentNodeType;
 
 
   constructor() {

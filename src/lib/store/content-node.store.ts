@@ -3,7 +3,7 @@ import {Action, createSelector, Selector, State, StateContext, Store} from "@ngx
 import {Injectable} from "@angular/core";
 import {append, compose, patch, removeItem, updateItem} from "@ngxs/store/operators";
 import {firstValueFrom, map} from "rxjs";
-import { BlockNode, TextNodeType } from "./model";
+import { BlockNode, ContentNodeType } from "./model";
 import { ContentState } from "./content.store";
 
 
@@ -35,7 +35,7 @@ export class LoadNodes {
 export class NewNode {
   static readonly type = '[ContentNode] Create New';
 
-  constructor(public id: string, public text: string, public type: TextNodeType) {
+  constructor(public id: string, public text: string, public type: ContentNodeType) {
   }
 }
 
@@ -56,7 +56,7 @@ export class RemoveNodes {
 export class TypeChangeNode { //ok
   static readonly type = '[ContentNode] Type Change';
 
-  constructor(public id: string, public type: TextNodeType) {
+  constructor(public id: string, public type: ContentNodeType) {
   }
 }
 
@@ -90,13 +90,13 @@ export class ContentNodeState {
   @Action(UpdateValueNode)
   updateValue({getState, setState}: StateContext<ContentNodeModel>, {id, value}: UpdateValueNode) {
     setState(patch({
-      nodes: patch<BlockNode>({[id]: patch({value: value, edited: true})})
+      nodes: patch({[id]: patch({value: value, edited: true})})
     }));
   }
 
   @Action(TypeChangeNode)
   typeChange({getState, setState}: StateContext<ContentNodeModel>, {id, type}: TypeChangeNode) {
-    setState(patch({nodes: patch<BlockNode>({[id]: patch({type})})}));
+    setState(patch({nodes: patch({[id]: patch({type})})}));
   }
 
   @Action(SetNotEdited)
@@ -141,13 +141,13 @@ export class ContentNodeState {
   @Action(NewNode)
   newNode({getState, setState}: StateContext<ContentNodeModel>, {id, type, text}: NewNode) {
     const newValue: BlockNode = {type, value: text, edited: true, id}
-    setState(patch({nodes: patch<BlockNode>({[id]: newValue})}));
+    setState(patch({nodes: patch({[id]: newValue})}));
   }
 
   @Action(RemoveNode)
   async removeNode({getState, setState}: StateContext<ContentNodeModel>, {id}: RemoveNode) {
     setState(patch(
-      {nodes: patch<BlockNode>({[id]: undefined})}
+      {nodes: patch({[id]: undefined})}
     ));
   }
 

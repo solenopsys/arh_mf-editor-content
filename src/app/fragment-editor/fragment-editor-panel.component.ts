@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {ArticleVersion} from "@solenopsys/fl-dgraph";
+import {ArticleVersion} from "../../lib/store/model";
 
 
 @Component({

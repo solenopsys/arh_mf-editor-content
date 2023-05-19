@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
-import {ArticleVersion, DgraphService, QueryGen} from "@solenopsys/fl-dgraph";
-import {Fragment, FragmentResp, VersionResp} from "./model";
+import { DgraphService, QueryGen} from "@solenopsys/fl-dgraph";
+import {ArticleVersion, Fragment, FragmentResp, VersionResp} from "./model";
 import {firstValueFrom, map, Observable} from "rxjs";
 
 
@@ -41,7 +41,7 @@ export class ContentService {
   }
 
   newTextVersion(a: ArticleVersion): Promise<any> {
-    const q = QueryGen.newTextVersion(a);
+    const q = undefined // todo  QueryGen.newTextVersion(a);
     return firstValueFrom(this.dgraph.mutate(q))
   }
 }

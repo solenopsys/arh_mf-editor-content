@@ -48,14 +48,14 @@ export interface BlockNode {
   uid?: string;
   before?: string;
   edited: boolean;
-  type: TextNodeType;
+  type: ContentNodeType;
   value: string;
 }
 
 export interface ContentNode {
   uid?: string;
   before?: string;
-  type: TextNodeType;
+  type: ContentNodeType;
   value: string;
 }
 
@@ -77,8 +77,15 @@ export interface Fragment {
 }
 
 
+export interface ArticleVersion {
+  articleId: string;
+  blocks: ContentNode[];
+}
 
-export enum TextNodeType {
+
+
+
+export enum ContentNodeType {
   PARAGRAPH = 'PARAGRAPH',
   HEADER1 = 'HEADER1',
   HEADER2 = 'HEADER2',

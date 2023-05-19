@@ -2,7 +2,7 @@ import {Component, EventEmitter, Input, OnInit, ViewEncapsulation} from '@angula
 import {filter, firstValueFrom, Observable} from "rxjs";
 import {FilterCachedProvider, ItemAbstract} from "@solenopsys/ui-controls";
 
-import {ArticleVersion} from "@solenopsys/fl-dgraph";
+
 import {ContentService} from "../store/content.service";
 import {IdService} from "@solenopsys/fl-globals";
 import {
@@ -13,7 +13,7 @@ import {
 } from "../store/content-groups.store";
 import {Store} from "@ngxs/store";
 import {ContentState, LoadVersion} from "../store/content.store";
-import {ContentNodesGroup} from "../store/model";
+import {ArticleVersion, ContentNodesGroup} from "../store/model";
 
 @Component({
   selector: 'ui-paragraph-move',

@@ -1,6 +1,6 @@
 import {Injectable} from "@angular/core";
 import {Action, createSelector, State, StateContext, Store} from "@ngxs/store";
-import {ContentNode, FragmentVersion, TextNodeType} from "./model";
+import {ContentNode, FragmentVersion, ContentNodeType} from "./model";
 import {ContentService} from "./content.service";
 import {append, compose, patch} from "@ngxs/store/operators";
 
@@ -68,7 +68,7 @@ export class ContentState {
 
     let newVar: FragmentVersion = {uid, nodes: blocks.map(item => item.uid)};
     let patches  = blocks.map(item => {
-      return  patch<ContentNode>({[item.uid]:{uid: item.uid, value: item.value, before: item.before, type: item.type as TextNodeType}})
+      return  patch({[item.uid]:{uid: item.uid, value: item.value, before: item.before, type: item.type as ContentNodeType}})
     });
 
     setState(patch(

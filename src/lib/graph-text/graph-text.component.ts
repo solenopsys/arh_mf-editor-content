@@ -1,5 +1,5 @@
 import {Component, ElementRef, Input, OnDestroy, OnInit, QueryList, ViewChild, ViewChildren} from '@angular/core';
-import {ContentNodesGroup, DragState, TextNodeType} from "../store/model";
+import {ContentNodesGroup, DragState, ContentNodeType} from "../store/model";
 import {distinctUntilChanged, Observable, Subject, Subscription} from "rxjs";
 import {
   ContentGroupState,
@@ -18,7 +18,7 @@ import {Select, Store} from "@ngxs/store";
   styleUrls: ['./graph-text.component.scss']
 })
 export class GraphTextComponent implements OnInit, OnDestroy {
-  NODES_TYPES = TextNodeType;
+  NODES_TYPES = ContentNodeType;
   nodesGroup$!: Observable<ContentNodesGroup | undefined>
   groupID!: string
   overDragFilter = new Subject<number>()
@@ -50,7 +50,7 @@ export class GraphTextComponent implements OnInit, OnDestroy {
   }
 
   add(blocks: string[]) {
-    this.store.dispatch(new NewGroupNode(this.groupID, blocks.length, '', TextNodeType.PARAGRAPH))
+    this.store.dispatch(new NewGroupNode(this.groupID, blocks.length, '', ContentNodeType.PARAGRAPH))
   }
 
   startDrag(i: number) {
