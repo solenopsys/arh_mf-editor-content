@@ -115,7 +115,7 @@ module.exports = {
     }),
     iconPlug(
       'packages/fui/icons/src',
-      'dist/modules/mf-richteri/content',
+      'dist/modules/mf-content',
       'packages/modules/mf-content/src/assets/menu.json'
     ),
     sharedMappings.getPlugin(),

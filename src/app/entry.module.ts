@@ -19,7 +19,7 @@ import {ContentNodeState} from "../lib/store/content-node.store";
     ],
     providers: [
       ...PROVIDERS_CONF,
-      {provide: 'assets_dir', useValue: '/fm/modules/mf-richteri/content'}
+      {provide: 'assets_dir', useValue: '/fm/modules/mf-content'}
     ],
   }
 )
