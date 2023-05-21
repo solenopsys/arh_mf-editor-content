@@ -1,6 +1,6 @@
 import {Injectable} from "@angular/core";
 import {Action, createSelector, State, StateContext, Store} from "@ngxs/store";
-import {ContentNode, FragmentVersion, ContentNodeType} from "./model";
+import {ContentNode, FragmentVersion, ContentNodeType} from "@solenopsys/fl-content";
 import {ContentService} from "./content.service";
 import {append, compose, patch} from "@ngxs/store/operators";
 

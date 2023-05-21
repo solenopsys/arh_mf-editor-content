@@ -1,5 +1,5 @@
 import {Component, ElementRef, Input, OnDestroy, OnInit, QueryList, ViewChild, ViewChildren} from '@angular/core';
-import {ContentNodesGroup, DragState, ContentNodeType} from "../store/model";
+import {ContentNodesGroup, DragState, ContentNodeType} from "@solenopsys/fl-content";
 import {distinctUntilChanged, Observable, Subject, Subscription} from "rxjs";
 import {
   ContentGroupState,

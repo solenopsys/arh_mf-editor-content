@@ -2,7 +2,7 @@ import {ChangeDetectionStrategy, Component, Input, ViewEncapsulation} from '@ang
 import {Store} from "@ngxs/store";
 import {Observable} from "rxjs";
 import {ContentNodeState, TypeChangeNode} from "../store/content-node.store";
-import {BlockNode, ContentNodeType} from "../store/model";
+import {BlockNode, ContentNodeType} from "@solenopsys/fl-content";
 
 
 @Component({

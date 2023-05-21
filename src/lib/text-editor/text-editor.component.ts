@@ -5,7 +5,7 @@ import {Location} from '@angular/common';
 
 import {Actions, ofActionSuccessful, Store} from "@ngxs/store";
 import {filter, Observable, Subscription} from "rxjs";
-import {ContentNodesGroup, Fragment} from "../store/model";
+import {ContentNodesGroup, Fragment} from "@solenopsys/fl-content";
 import {FragmentState, FragmentVersionUpdated, LoadFragment} from "../store/fragment.store";
 import {ContentState, LoadVersion} from "../store/content.store";
 import {Navigate} from "@ngxs/router-plugin";

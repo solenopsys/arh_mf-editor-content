@@ -3,7 +3,7 @@ import {Action, createSelector, Selector, State, StateContext, Store} from "@ngx
 import {Injectable} from "@angular/core";
 import {append, compose, patch, removeItem, updateItem} from "@ngxs/store/operators";
 import {firstValueFrom, map} from "rxjs";
-import { BlockNode, ContentNodeType } from "./model";
+import { BlockNode, ContentNodeType } from "@solenopsys/fl-content";
 import { ContentState } from "./content.store";
 
 

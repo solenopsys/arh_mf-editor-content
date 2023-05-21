@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {ContentNode, ContentNodeType} from "../store/model";
+import {ContentNode, ContentNodeType} from "@solenopsys/fl-content";
 
 @Component({
   selector: 'ui-text-view',

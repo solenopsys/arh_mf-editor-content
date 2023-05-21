@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import { DgraphService, QueryGen} from "@solenopsys/fl-dgraph";
-import {ArticleVersion, Fragment, FragmentResp, VersionResp} from "./model";
 import {firstValueFrom, map, Observable} from "rxjs";
+import {ArticleVersion, Fragment, FragmentResp, VersionResp} from "@solenopsys/fl-content";
 
 
 

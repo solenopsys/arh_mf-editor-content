@@ -7,7 +7,7 @@ import {
   LAST_POSITION,
 
   ContentNodeType, ArticleVersion,
-} from "./model";
+} from "@solenopsys/fl-content";
 import {Action, createSelector, Selector, State, StateContext, Store} from "@ngxs/store";
 import {append, compose, insertItem, patch, removeItem, updateItem} from "@ngxs/store/operators";
 import {firstValueFrom} from "rxjs";

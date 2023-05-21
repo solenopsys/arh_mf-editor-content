@@ -4,7 +4,7 @@ import {Action, createSelector, State, StateContext} from "@ngxs/store";
 import {firstValueFrom} from "rxjs";
 
 import {append, patch, updateItem} from "@ngxs/store/operators";
-import { Fragment } from "./model";
+import { Fragment } from "@solenopsys/fl-content";
 
 
 export class FragmentsStateModel {

@@ -13,7 +13,7 @@ import {
 } from "../store/content-groups.store";
 import {Store} from "@ngxs/store";
 import {ContentState, LoadVersion} from "../store/content.store";
-import {ArticleVersion, ContentNodesGroup} from "../store/model";
+import {ArticleVersion, ContentNodesGroup} from "@solenopsys/fl-content";
 
 @Component({
   selector: 'ui-paragraph-move',

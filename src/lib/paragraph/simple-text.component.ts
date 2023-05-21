@@ -2,7 +2,7 @@ import {AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, Input, On
 
 import {filter, Observable} from "rxjs";
 import {Actions, ofActionSuccessful, Store} from "@ngxs/store";
-import {BlockNode} from "../store/model";
+import {BlockNode} from "@solenopsys/fl-content";
 import {
   ConcatNodes,
   DownFocusNode,
