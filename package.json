@@ -11,7 +11,6 @@
     "@solenopsys/fl-content": "^0.1.0",
     "@solenopsys/ui-utils": "^0.1.0",
     "@solenopsys/ui-icons": "^0.1.0",
-    "@solenopsys/ui-editor-content": "^0.1.0",
     "@solenopsys/ui-controls": "^0.1.0",
     "@solenopsys/fl-globals": "^0.1.0"
   },

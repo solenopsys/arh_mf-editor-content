@@ -8,7 +8,7 @@ import {ClusterState} from "@solenopsys/fl-clusters";
 import {RowsState} from "@solenopsys/ui-lists";
 import {HStreamService, HStreamsState, StreamsPool, WsPool} from "@solenopsys/fl-hyperstreams";
 import {FragmentState} from "../lib/store/fragment.store";
-import {UIEditorModule} from "../lib/ui-editor.module";
+import {EditorModule} from "../lib/editor.module";
 import {ContentNodeState} from "../lib/store/content-node.store";
 import {ContentGroupState} from "../lib/store/content-groups.store";
 import {ContentState} from "../lib/store/content.store";

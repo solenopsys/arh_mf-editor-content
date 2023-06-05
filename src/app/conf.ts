@@ -10,7 +10,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {MovePageComponent} from "./move-page/move-page.component";
 import {ContentService} from "../lib/store/content.service";
 import {UIListsModule} from "@solenopsys/ui-lists";
-import {UIEditorModule} from "../lib/ui-editor.module";
+import {EditorModule} from "../lib/editor.module";
 
 export const ROUTES: Routes = [
   {path: 'move', component: MovePageComponent},
@@ -57,6 +57,6 @@ export const IMPORTS_CONF = [
   CommonModule,
   FormsModule,
   UIListsModule,
-  UIEditorModule,
+  EditorModule,
   HttpClientModule,
 ];

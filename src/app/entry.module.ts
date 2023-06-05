@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {RouterModule} from "@angular/router";
 import {DECLARATION, IMPORTS_CONF, PROVIDERS_CONF, routesAndRedirect} from "./conf";
-import {UIEditorModule} from "../lib/ui-editor.module";
+import {EditorModule} from "../lib/editor.module";
 import {FragmentState} from "../lib/store/fragment.store";
 import {ContentState} from "../lib/store/content.store";
 import {ContentGroupState} from "../lib/store/content-groups.store";
@@ -14,7 +14,7 @@ export const STATES=[FragmentState, ContentState, ContentGroupState, ContentNode
     imports: [
         RouterModule.forChild(routesAndRedirect),
         ...IMPORTS_CONF,
-        UIEditorModule
+        EditorModule
     ],
     providers: [
       ...PROVIDERS_CONF,
