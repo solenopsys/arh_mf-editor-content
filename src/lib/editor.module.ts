@@ -23,6 +23,7 @@ const components = [
   TextTypeSelectorComponent,
   TextEditorComponent,
   ParagraphMoveComponent,
+
   NodeEditorComponent,
   DragTargetComponent,
 ];
