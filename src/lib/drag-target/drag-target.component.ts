@@ -1,6 +1,6 @@
 import {Component, Input, OnInit, ViewEncapsulation} from '@angular/core';
 
-import {Observable} from "rxjs";
+import {async, Observable} from "rxjs";
 import {Store} from "@ngxs/store";
 import {DragState} from "@solenopsys/fl-content";
 
@@ -28,4 +28,6 @@ export class DragTargetComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+    protected readonly async = async;
 }
