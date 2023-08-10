@@ -1,5 +1,5 @@
 {
-  "name": "@solenopsys/ui-editor-content",
+  "name": "@solenopsys/mf-editor-content",
   "version": "0.1.0",
   "peerDependencies": {
     "@solenopsys/fl-clusters": "^0.1.0",
