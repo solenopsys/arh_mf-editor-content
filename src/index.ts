@@ -1,7 +1,7 @@
 import {XsModule, XsModuleType} from "@solenopsys/fl-globals";
-import {EditorModule} from "./lib/editor.module";
+import {EntryModule} from "./lib/entry.module";
 
-export const ENTRY:XsModule<EditorModule> ={
-    module: EditorModule,
+export const ENTRY:XsModule<EntryModule> ={
+    module: EntryModule,
     type: XsModuleType.PLATFORM,
 };
