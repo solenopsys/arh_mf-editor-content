@@ -1,7 +1,7 @@
 import {NgModule} from "@angular/core";
 import {DevPageComponent} from "./dev-page.component";
 import {RouterModule, Routes} from "@angular/router";
-import {MdComponent} from "./markdown.component";
+import {MdRendererComponent} from "../../../../../libraries/solenopsys/ui-publications/src/lib/markdown.component";
 import {MarkdownModule} from "ngx-markdown";
 
 
@@ -10,10 +10,10 @@ import {MarkdownModule} from "ngx-markdown";
 @NgModule({
     declarations: [
         DevPageComponent,
-        MdComponent,
+        MdRendererComponent,
     ],
     imports: [
-        RouterModule.forChild([{path: '', component: MdComponent},]),
+        RouterModule.forChild([{path: '', component: MdRendererComponent},]),
         MarkdownModule.forRoot()
 
     ],
